@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da ju</title>
+   
+    <link rel="shortcut icon" href="imagens/Bolos Da Ju.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" >
+    <link rel="stylesheet" href="estilos/style2.css" >
+   
+
+    <style>
+        a{
+            text-decoration: none;
+            color: white;
+            
+        }
+       
+        .img{
+            border-radius: 60%;
+           
+           
+        }
+        img{
+            position: relative;
+            top: 3px;
+           
+            
+        }
+      
+        
+       
+    </style>
+</head>
+<body onresize="mudoutamanho()">
+    <header >  
+        <h1 id="tituloH">Bolos da ju</h1>
+        <span  id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+      <img src="imagens/Bolos Da Ju.png" alt="">
+        
+                <nav class="nav" id="itens3">
+                    <div >
+                        <a href="#" target="_self" rel="unself"  onclick=" clickRede()" id="sociais">Redes Sociais</a>
+                        <ul class="redes"  id="itens">
+                            <li><a href="https://www.instagram.com/bolosdaju63/" target="_blank">instagram</a></li>
+                            <li><a href="https://www.facebook.com/jucilene.silva.925059" target="_blank">facebook</a></li>
+                            <li><a href="https://wa.me/5511967242413" target="_blank">whatsapp</a></li>
+                        </ul>
+                    </div>
+                    
+
+                    <div>
+                        <a href="#"  onclick=" clickPeca()" id="pedido">Peça o seu</a>
+                        <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" autocomplete="on" id="itens2">
+                            <fieldset>
+                                <legend>Faça seu pedido</legend>
+                                <div class="campo1">
+                                    <div class="display">
+                                        <p>
+                                            <label for="inome"></label>
+                                            <input type="text" name="nome" id="inome" required placeholder="Nome" autocomplete="name">
+                                        </p>
+                                        <p>
+                                            <label for="itel"></label>
+                                            <input type="tel" name="tel" id="itel" required placeholder="Telefone (Whatsapp)" autocomplete="tel">
+                                        </p>
+                                    </div>
+                                    <div class="display">
+                                        <p>
+                                           <select name="bolo" id="ibolo">
+                                            <option value="" selected >Escolha seu bolo</option>
+                                            <option value="">Bolo de Chocolate</option>
+                                            <option value=""  >Bolo de Mandioca</option>
+                                            <option value=""  >Bolo de Prestígio</option>
+                                            <option value=""  >Bolo de Limão</option>
+                                            <option value=""  >Bolo de Maracujá</option>
+                                            <option value=""  >Bolo de Frutas</option>
+                                            <option value=""  >Bolo de Pêssego</option>
+                                            <option value=""  >Bolo de Uva</option>
+                                            <option value=""  >Bolo de milho</option>
+                                            <option value=""  >Bolo de brigadeiro</option>
+                                            <option value=""  >Bolo de Ninho</option>
+                                            <option value=""  >Musse de Ninho</option>
+                                            <option value=""  >Musse de Chocolate</option>
+                                            <option value=""  >Musse de Maracujá</option> 
+                                            <option value="">Outro</option>
+                                           </select>
+
+                                        </p>
+                                        
+                                        <p>
+                                        <label for="iuni"></label >
+                                        <select name="tamanho" id="itamanho" required>
+                                            <option value="" selected >Tamanho e forma</option>        
+                                            <optgroup label="Forma quadrada">
+                                                <option value="">Pequena - R$ 100</option>
+                                                <option value="">Média   - R$ 130</option>
+                                                <option value="">Grande  - R$ 200</option>
+                                            </optgroup>
+
+                                           <optgroup label="Forma Redonda">
+                                            <option value="">10cm - R$ 40</option>
+                                            <option value="">15cm - R$ 80</option>
+                                            <option value="">20cm - R$150</option>
+                                            <option value="">25cm - R$ 200</option>
+                                            <option value="">35cm - R$ 350</option>
+                                            <option value="">40cm - R$400</option>
+                                            <option value="">Outro</option>
+                                           </optgroup>                 
+                                        </select>
+                                        </p>
+                                    </div>
+                                    <div class="display2">
+                                        <p>
+                                            <label for="iEscoBolo"></label>
+                                            <input type="text" name="EscoBolo" id="iEscoBolo" placeholder="Escreva o bolo que escolheu aqui" required>
+                                        </p>
+                                        <p>
+                                            <label for="iTa"></label>
+                                            <input type="text" name="bolo" id="iTa" placeholder="Escreva o tamanho e preço aqui" required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    <h1>Não achou o que está procurando?</h1>
+                                    <textarea name="PedidoPorMensagem" id="ibo" cols="30" rows="10">Escreva aqui o seu pedido, caso não tenha encontrado o que procura.</textarea>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Fazer pedido">
+                                    <input type="reset" value="Limpar">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <a href="#">Contato</a>
+                    <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+       <section class="conteudo principal" >
+       <div class="escrito"><h1 id="h1">Bolos da Ju</h1></div>
+       <img src="imagens/PHOTO.PNG" alt="navegador incompátivel" class="img">
+       </section>
+
+       <section class="secundário">
+        <h2 id="titulo">Por que me escolher?</h2>
+        <p class="sec2">1. Faço o que faço com carinho e amor.</p>
+        <p class="sec2">2. Uso produtos de qualidade e por um valor acessível.</p>
+        <p class="sec2">3. Utilizo acessórios e produtos de higiene para manter a qualidade do meu produto.</p>
+       </section>
+
+    
+      
+   
+    
+    </main>
+   
+
+    <footer>
+      <img src="video&gif/gi2.gif" alt=""  id="gif">
+    </footer>
+
+    <script>
+        function mudoutamanho(){
+            if(window.innerWidth >= 799){
+                itens3.style.display = 'flex'
+            }else{
+                itens3.style.display = 'none'
+            }
+        }
+        function clickRede(){
+            if(itens.style.display == 'block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function clickPeca(){
+            if(itens2.style.display == 'block'){
+                itens2.style.display='none'
+            }else{
+                itens2.style.display='block'
+            }
+        }
+        function clickMenu(){
+                   if( itens3.style.display == 'none' )  {
+                    itens3.style.display = 'flex' 
+                   }  
+                   else{
+                    itens3.style.display = 'none' 
+                   }    
+        }
+       
+    </script>
+</body>
+</html>

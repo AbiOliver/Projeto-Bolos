@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bologna';
+    src: url('../fontes/Bolognese\ Regular\ TTF.ttf') ;
+}
+@font-face {
+    font-family: 'bo2';
+    src: url('fontes/BolognaSansish.ttf') ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@font-face {
+    font-family: 'Pin';
+    src: url('fontes/PinyPromise.ttf') ;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+        --cor0: #D93B84;
+        --cor1: #F235B0; 
+        --cor2: #F244E7;
+        --cor3: #F2AC29;
+        --cor4: #F27F1B;
+
+        --fonte-padrao: 'Courier Prime', Georgia,  sans-serif;
+        --fonte-destaque:'bo', sans-serif;
+        --fonte-extra: 'Righteous', sans-serif;
+        }
+
+body{
+    font-size: 100%;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3)) ;
+    background-attachment: fixed;
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+header img{
+            
+            height: 72px;
+            border: 2px solid rgba(0, 0, 0, 0.041);
+            box-shadow: 1px 1px 1px rgba(19, 17, 17, 0.425);
+            border-radius: 50%;
+            
+}
+ header{
+    display:flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: space-around;
+    padding: 9px;
+}
+#tituloH{
+    display: none;
+}
+#burguer{
+    display: none;
+}
+
+nav{
+    display: flex;
+    gap: 32px;
+}
+nav a{ 
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    font-family: var(--fonte-padrao);
+    flex-wrap: wrap; 
+}
+nav a:hover{
+    color: rgba(255, 255, 255, 0.59);
+}
+
+ul.redes{
+    background-color: #e2156b;
+    display:block;
+    list-style-type: none;
+    border: 1px solid white;
+   
+    border-radius: 5px;
+    padding: 2px  15px 2px 15px;
+    position: absolute;
+    z-index: 2;
+}
+#itens{
+    display: none;
+}
+ul>li>a{
+    font-size: 1em;
+}
+ul>li>a:hover{
+    color: rgba(255, 255, 255, 0.59);
+}
+#sociais::after{
+    content: ' ⌵';
+}
+#sociais:hover{
+    color: rgba(255, 255, 255, 0.59);
+}
+#pedido::after{
+    content: ' ⌵';
+}
+main{
+    background-position: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+    border-top: 0.4px solid white ;
+    margin-bottom: 48px;
+}
+main img{
+    max-height: 330px;
+    max-width: 330px;
+}
+.principal{
+            display: flex; 
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+}
+.escrito{
+      
+        display: flex;
+        flex-direction: column ;
+        gap: 32px;
+        color: white;
+}
+#h1{
+    font-family: 'Bologna';
+    font-weight: 400;
+    font-size: 64px;
+}
+form{
+    display: none;
+}
+fieldset{
+    background: url('../imagens/Bolos\ Da\ Ju.png');
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: #e2156b;
+    border-radius: 10px;
+    
+}
+.campo1{
+    background-color: #ed1bdfa6;
+    padding: 10px;
+    border-radius: 10px;
+}
+fieldset legend{
+    background-color: #fc77e8;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+}
+div.display{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+div.display2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    }
+fieldset input{
+    width: 230px;
+    background-color: #fc77e8;
+    border: 1px solid white;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+::placeholder{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+fieldset select{
+    width: 229px;
+    background-color: #fc77e8;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+
+    font-size: .9em;
+    font-weight: bold;
+}
+input[type="checkbox"]{
+    margin-top: 10px;
+    width: 15px;
+    margin-top: 30px;  
+}
+
+div.display label{
+    color: white;
+    font-weight: bold;
+}
+fieldset h1{
+    width: 100%;
+    color: #F244E7;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0px;
+}
+textarea{
+    width: 500px;
+    resize: none;
+    background-color: #fc77e8;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    color: white; 
+    font-weight: bold;
+    margin-right: 30px;
+}
+input[type="submit"]:hover{
+   background-color: #e2156b;
+}
+input[type="reset"]{
+    color: white; 
+    font-weight: bold;
+}
+input[type="reset"]:hover{
+    background-color: #e2156b;
+ }
+
+.secundário{
+   
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            font-weight: 400;
+            font-size: 24px;
+            font-family: var(--fonte-padrao);
+            color: white;
+            margin-bottom: 16px;
+}
+.sec2{
+        font-family: var(--fonte-extra);
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+    }
+footer{
+        padding: 32px;
+        border-top: 0.4px solid white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-family: var(--fonte-extra);
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+}
+#titulo{
+        margin-top: 48px;
+        border-top: 0.4px solid white ;
+        padding-top: 48px;
+        font-weight: 400;
+        font-size: 24px;
+}
+
+
+img#gif{
+    width: 800px;
+    height: 50px;
+}
