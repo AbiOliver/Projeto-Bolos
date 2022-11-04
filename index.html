@@ -29,10 +29,7 @@
             top: 3px;
            
             
-        }
-      
-        
-       
+        }       
     </style>
 </head>
 <body onresize="mudoutamanho()">
@@ -53,90 +50,16 @@
                     
 
                     <div>
-                        <a href="#"  onclick=" clickPeca()" id="pedido">Peça o seu</a>
-                        <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" autocomplete="on" id="itens2">
-                            <fieldset>
-                                <legend>Faça seu pedido</legend>
-                                <div class="campo1">
-                                    <div class="display">
-                                        <p>
-                                            <label for="inome"></label>
-                                            <input type="text" name="nome" id="inome" required placeholder="Nome" autocomplete="name">
-                                        </p>
-                                        <p>
-                                            <label for="itel"></label>
-                                            <input type="tel" name="tel" id="itel" required placeholder="Telefone (Whatsapp)" autocomplete="tel">
-                                        </p>
-                                    </div>
-                                    <div class="display">
-                                        <p>
-                                           <select name="bolo" id="ibolo">
-                                            <option value="" selected >Escolha seu bolo</option>
-                                            <option value="">Bolo de Chocolate</option>
-                                            <option value=""  >Bolo de Mandioca</option>
-                                            <option value=""  >Bolo de Prestígio</option>
-                                            <option value=""  >Bolo de Limão</option>
-                                            <option value=""  >Bolo de Maracujá</option>
-                                            <option value=""  >Bolo de Frutas</option>
-                                            <option value=""  >Bolo de Pêssego</option>
-                                            <option value=""  >Bolo de Uva</option>
-                                            <option value=""  >Bolo de milho</option>
-                                            <option value=""  >Bolo de brigadeiro</option>
-                                            <option value=""  >Bolo de Ninho</option>
-                                            <option value=""  >Musse de Ninho</option>
-                                            <option value=""  >Musse de Chocolate</option>
-                                            <option value=""  >Musse de Maracujá</option> 
-                                            <option value="">Outro</option>
-                                           </select>
-
-                                        </p>
-                                        
-                                        <p>
-                                        <label for="iuni"></label >
-                                        <select name="tamanho" id="itamanho" required>
-                                            <option value="" selected >Tamanho e forma</option>        
-                                            <optgroup label="Forma quadrada">
-                                                <option value="">Pequena - R$ 100</option>
-                                                <option value="">Média   - R$ 130</option>
-                                                <option value="">Grande  - R$ 200</option>
-                                            </optgroup>
-
-                                           <optgroup label="Forma Redonda">
-                                            <option value="">10cm - R$ 40</option>
-                                            <option value="">15cm - R$ 80</option>
-                                            <option value="">20cm - R$150</option>
-                                            <option value="">25cm - R$ 200</option>
-                                            <option value="">35cm - R$ 350</option>
-                                            <option value="">40cm - R$400</option>
-                                            <option value="">Outro</option>
-                                           </optgroup>                 
-                                        </select>
-                                        </p>
-                                    </div>
-                                    <div class="display2">
-                                        <p>
-                                            <label for="iEscoBolo"></label>
-                                            <input type="text" name="EscoBolo" id="iEscoBolo" placeholder="Escreva o bolo que escolheu aqui" required>
-                                        </p>
-                                        <p>
-                                            <label for="iTa"></label>
-                                            <input type="text" name="bolo" id="iTa" placeholder="Escreva o tamanho e preço aqui" required>
-                                        </p>
-                                    </div>
-                                </div>
-                                <p>
-                                    <h1>Não achou o que está procurando?</h1>
-                                    <textarea name="PedidoPorMensagem" id="ibo" cols="30" rows="10">Escreva aqui o seu pedido, caso não tenha encontrado o que procura.</textarea>
-                                </p>
-                                <p>
-                                    <input type="submit" value="Fazer pedido">
-                                    <input type="reset" value="Limpar">
-                                </p>
-                            </fieldset>
-                        </form>
+                        <a href="#itens2" >Peça o seu</a>
+                      
                     </div>
-                    <a href="#">Contato</a>
+                    <a href="#contato">Contato</a>
                     <a href="#">Sobre</a>
+                    <a href="#" onclick="clickFeed()" id="feed">Feedback</a>
+                    <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" id="feedback">
+                        <input type="text" name="mensagem" id="imensagem" placeholder="Deixe seu feedback...">
+                        <input type="submit" value="Enviar">
+                   </form>
         </nav>
     </header>
 
@@ -153,16 +76,126 @@
         <p class="sec2">3. Utilizo acessórios e produtos de higiene para manter a qualidade do meu produto.</p>
        </section>
 
-    
-      
-   
-    
     </main>
    
+  
+        
+        <div class="fieldset">
+           
+            <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" autocomplete="on" id="itens2" >
+                <div>
+                    <legend>Faça seu pedido</legend>
+                    <div class="campo1">
+                        <div class="display">
+                            <p>
+                                <label for="inome"></label>
+                                <input type="text" name="nome" id="inome" required placeholder="Nome" autocomplete="name">
+                            </p>
+                            <p>
+                                <label for="itel"></label>
+                                <input type="tel" name="tel" id="itel" required placeholder="Telefone (Whatsapp)" autocomplete="tel">
+                            </p>
+                        </div>
+                        <div class="display" >
+                            <p>
+                               <select name="bolo" id="ibolo">
+                                <option value="" selected >Escolha seu bolo</option>
+                                <option value="">Bolo de Chocolate</option>
+                                <option value=""  >Bolo de Mandioca</option>
+                                <option value=""  >Bolo de Prestígio</option>
+                                <option value=""  >Bolo de Limão</option>
+                                <option value=""  >Bolo de Maracujá</option>
+                                <option value=""  >Bolo de Frutas</option>
+                                <option value=""  >Bolo de Pêssego</option>
+                                <option value=""  >Bolo de Uva</option>
+                                <option value=""  >Bolo de milho</option>
+                                <option value=""  >Bolo de brigadeiro</option>
+                                <option value=""  >Bolo de Ninho</option>
+                                <option value=""  >Musse de Ninho</option>
+                                <option value=""  >Musse de Chocolate</option>
+                                <option value=""  >Musse de Maracujá</option>
+                                <option value="">Outro</option>
+                               </select>
+                            </p>
+            
+                            <p>
+                            <label for="iuni"></label >
+                            <select name="tamanho" id="itamanho" required>
+                                <option value="" selected >Tamanho e forma</option>
+                                <optgroup label="Forma quadrada">
+                                    <option value="">Pequena - R$ 100</option>
+                                    <option value="">Média   - R$ 130</option>
+                                    <option value="">Grande  - R$ 200</option>
+                                </optgroup>
+                               <optgroup label="Forma Redonda">
+                                <option value="">10cm - R$ 40</option>
+                                <option value="">15cm - R$ 80</option>
+                                <option value="">20cm - R$150</option>
+                                <option value="">25cm - R$ 200</option>
+                                <option value="">35cm - R$ 350</option>
+                                <option value="">40cm - R$400</option>
+                                <option value="">Outro</option>
+                               </optgroup>
+                            </select>
+                            </p>
+                        </div>
+                        <div class="display2">
+                            <p>
+                                <label for="iEscoBolo"></label>
+                                <input type="text" name="EscoBolo" id="iEscoBolo" placeholder="Bolo que escolheu " required>
+                            </p>
+                            <p>
+                                <label for="iTa"></label>
+                                <input type="text" name="bolo" id="iTa" placeholder="Tamanho e preço" required>
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        <h1>Não achou o que está procurando?</h1>
+                        <textarea name="PedidoPorMensagem" id="ibo" cols="30" rows="10">Escreva aqui o seu pedido, caso não tenha encontrado o que procura.</textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Fazer pedido">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </div>
+            </form>
+        </div >
 
-    <footer>
-      <img src="video&gif/gi2.gif" alt=""  id="gif">
-    </footer>
+   
+    <aside>
+        <div class="contato" id="contato">
+            <h2>CONTATO</h2>
+            <p>83 Rua Renata, casa 1. Barueri, SP 06436-230</p>
+            <p>confeitariaju6@gmail.com</p>
+            <p>+55 11 96724-2413</p>
+       </div>
+            <div class="contato">
+                <h2 id="menu">INICIO</h2>
+                 <ul class="menu">
+                 <p><a href="#" id="feed">Feedback</a></p>
+                 <p><a href="#">Sobre</a></p>
+                 <p><a href="#contato">Contato</a></p>
+                 <p><a href="#" target="_self" rel="unself"  id="sociais">Redes Sociais</a></p>
+
+                
+                </ul>
+               
+            </div>
+           <div class="menuSocial ">
+            <h2>SOCIAIS</h2>
+            <div class=" menu">
+                <p><a href="https://www.facebook.com/jucilene.silva.925059" target="_blank"><img src=" https://cdn-icons-png.flaticon.com/512/1051/1051258.png"  alt="facebook" class="ImgSociais"> </a></p>
+                <p><a href="https://www.instagram.com/bolosdaju63/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="instagram" class="ImgSociais"></a> </p>
+                <p><a href="mailto:confeitariaju6@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="Gmail" class="ImgSociais"></a></p>
+                <p><a href="https://wa.me/5511967242413" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="whatsapp" class="ImgSociais" t></a></p>
+            </div>
+           </div>
+           <div><p id="logo">© Bolos da Ju</p></div>
+        </aside>
+        <footer>
+            <p>Direitos reservados</p>
+        </footer>
 
     <script>
         function mudoutamanho(){
@@ -179,13 +212,6 @@
                 itens.style.display='block'
             }
         }
-        function clickPeca(){
-            if(itens2.style.display == 'block'){
-                itens2.style.display='none'
-            }else{
-                itens2.style.display='block'
-            }
-        }
         function clickMenu(){
                    if( itens3.style.display == 'none' )  {
                     itens3.style.display = 'flex' 
@@ -193,6 +219,13 @@
                    else{
                     itens3.style.display = 'none' 
                    }    
+        }
+        function clickFeed(){
+            if(feedback.style.display=='flex'){
+                feedback.style.display = 'none'
+            }else{
+                feedback.style.display = 'flex'
+            }
         }
        
     </script>

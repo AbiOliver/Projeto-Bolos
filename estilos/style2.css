@@ -27,9 +27,7 @@
     #burguer:hover{
        background-color: rgba(240, 248, 255, 0.268);
     }
-    #pedido{
-        display: block;
-    }
+   
     nav{
         display: none;
         flex-direction: row;
@@ -39,7 +37,7 @@
         margin-top: 10px;
     }
     nav a {
-        font-size: 12px;
+        font-size: 15px;
     }
     #burguer{
         display: block;
@@ -48,15 +46,26 @@
         color: white;
         margin: right;
     }
+    #itens3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(240, 248, 255, 0.268);
+        border: 1px solid white;
+        gap: 12px;
+    }
+    #feedback{
+        width: 345px;
+    }
     ul.redes{
-        background-color: #e2156b;
-        display:none;
-        list-style-type: circle;
+        background-color: #e2156abd;
+        display:block;
+        margin:0 auto;
+        text-align: center;
+        list-style-type: none;
         border-radius: 5px;
-        padding: 3px  10px 2px 30px;
-        position: fixed;
-        width: 200px;
-        text-align: right;
+        position: none;
+       
     }
     main img{
         max-height: 330px;
@@ -100,26 +109,66 @@
     font-size: 9px;
     color: white;
 }
-footer{
-    padding: 0px;
-    border-top: 0.4px solid white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-family: var(--fonte-extra);
-    font-weight: 400;
-    font-size: 15px;
-    color: white;
+.fieldset{
+    width: 350px;
+    height: 550px;
 }
-#titulo{
-    margin-top: 18px;
-    border-top: 0.4px solid white ;
-    padding-top: 18px;
-    font-weight: 400;
-    font-size: 0px;
+.campo{
+    padding: 20px;
 }
-img#gif{
+.fieldset input{
+    width: 150px;
+}
+.fieldset select{
+    width: 150px;
+}
+textarea{
     width: 300px;
+    height: 100px;
+}
+input[type="submit"]{
+    width: 120PX;
+    color: white; 
+    font-weight: bold;
+    margin-left: 35px;
+ 
+}
+input[type="reset"]{
+    width: 120PX;
+    color: white; 
+    font-weight: bold;
+}
+::placeholder{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+.menu{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    list-style-type: none;
+    line-height: 2em;
+    font-weight: lighter;
+    flex-grow: row;
+    border-right: none;
+}
+aside h2{
+    font-size: 10px;
+}
+.menuSocial{
+    padding: 0px;
+    padding-top: 15px;
+    font-size: 10px;
+    display: block;
+    border: none;
+}
+.contato{
+    border: none;
+    display: block;
+}
+
+div>p#logo{
+    display: none;
 }
 }

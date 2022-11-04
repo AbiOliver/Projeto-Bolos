@@ -11,8 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @font-face {
-    font-family: 'Pin';
-    src: url('fontes/PinyPromise.ttf') ;
+    font-family: 'love';
+    src: url('../fontes/Cardinal.ttf');
 }
 *{
     margin: 0px;
@@ -26,27 +26,24 @@
         --cor2: #F244E7;
         --cor3: #F2AC29;
         --cor4: #F27F1B;
-
+        --cor5: #e981b8;
         --fonte-padrao: 'Courier Prime', Georgia,  sans-serif;
         --fonte-destaque:'bo', sans-serif;
         --fonte-extra: 'Righteous', sans-serif;
         }
-
 body{
     font-size: 100%;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor3)) ;
+    background: #e981b8 ;
     background-attachment: fixed;
     background-size: cover;   
     background-repeat: no-repeat;
 }
-
-header img{
-            
+header img{       
             height: 72px;
             border: 2px solid rgba(0, 0, 0, 0.041);
             box-shadow: 1px 1px 1px rgba(19, 17, 17, 0.425);
-            border-radius: 50%;
-            
+            border-radius: 50%;      
 }
  header{
     display:flex;
@@ -75,6 +72,7 @@ nav a{
 }
 nav a:hover{
     color: rgba(255, 255, 255, 0.59);
+    transition: .2s ease-in-out;
 }
 
 ul.redes{
@@ -122,6 +120,7 @@ main img{
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
+            margin-bottom: 40px;
 }
 .escrito{
       
@@ -136,56 +135,54 @@ main img{
     font-size: 64px;
 }
 form{
-    display: none;
+    display: block;
+  
+   
 }
-fieldset{
+.fieldset{
+    width: 800px;
+    height: 650px;
+    display: block;
+    margin: auto;
     background: url('../imagens/Bolos\ Da\ Ju.png');
     background-position: center center;
     background-size: cover;
-    width: 500px;
-    height: 450px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%);
     border: 1px solid black;
     padding: 10px;
     border: 1px solid white;
     background-color: #e2156b;
     border-radius: 10px;
-    
+    margin-bottom: 30px;
 }
+
 .campo1{
     background-color: #ed1bdfa6;
-    padding: 10px;
+    padding: 50px;
     border-radius: 10px;
 }
-fieldset legend{
-    background-color: #fc77e8;
-    border: 1px solid ;
+.fieldset legend{
+    text-align: center;
     border-radius: 5px;
     padding: 3px;
-    text-align: center;
-    color: white;
+    font-size: 1.7em;
+    color: #F235B0;
 }
 div.display{
 display: flex;
 flex-direction: row;
 justify-content: space-around;
-
 }
 div.display2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
-    }
-fieldset input{
-    width: 230px;
+}
+.fieldset input{
+    width: 350px;
     background-color: #fc77e8;
     border: 1px solid white;
-    padding: 5px;
+    padding: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -195,16 +192,15 @@ fieldset input{
     font-size: 1em;
     font-weight: bold;
 }
-
-fieldset select{
-    width: 229px;
+.fieldset select{
+    width: 350px;
+    margin-right: 5px;
     background-color: #fc77e8;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
-
     font-size: .9em;
     font-weight: bold;
 }
@@ -213,12 +209,17 @@ input[type="checkbox"]{
     width: 15px;
     margin-top: 30px;  
 }
-
+.fieldset input:hover{
+    background-color: #e2156b;
+}
+.fieldset select:hover{
+    background-color: #e2156b;
+}
 div.display label{
     color: white;
     font-weight: bold;
 }
-fieldset h1{
+.fieldset h1{
     width: 100%;
     color: #F244E7;
     background-color: aliceblue;
@@ -227,7 +228,11 @@ fieldset h1{
     margin: 20px 0px;
 }
 textarea{
-    width: 500px;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 10PX;
+    width: 750px;
+    height: 200px;
     resize: none;
     background-color: #fc77e8;
     color: white;
@@ -235,15 +240,21 @@ textarea{
     border: 2px solid white;
     border-radius: 5px;
 }
+textarea:hover{
+    background-color: #e2156b;
+}
 input[type="submit"]{
-    color: white; 
-    font-weight: bold;
-    margin-right: 30px;
+     width: 320PX;
+     color: white; 
+     font-weight: bold;
+     margin-left: 60px;
+  
 }
 input[type="submit"]:hover{
    background-color: #e2156b;
 }
 input[type="reset"]{
+    width: 320PX;
     color: white; 
     font-weight: bold;
 }
@@ -251,8 +262,48 @@ input[type="reset"]:hover{
     background-color: #e2156b;
  }
 
+#feedback:focus #feed{
+    display: none;
+}
+#feedback{  
+    display: none;
+    justify-content: right;
+}
+#feedback input[type="text"]{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.163);
+    border-radius: 5px 0px 0px 0px;
+    border: 2px solid white;
+    border-right: none;
+    padding:5px;
+}
+#feedback input::placeholder{
+    font-size: 1.4em;
+    font-family: 'lato';
+    font-weight: 100;
+    text-align: left;
+    color:white;
+}
+#feedback input[type="submit"]{
+    width: 60px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.163);
+    border: 2px solid white;
+    padding: 5px;
+    position: relative;
+    margin-left: 0;
+}
+#feeback input[value="Enviar"]:hover{
+    cursor: pointer;
+
+}
+#feedback input:hover{
+    background-color: #F244E7;
+    transition: .4s ease-in-out;
+    
+}
 .secundário{
-   
             display: flex; 
             flex-direction: column;
             align-items: center;
@@ -261,7 +312,7 @@ input[type="reset"]:hover{
             font-size: 24px;
             font-family: var(--fonte-padrao);
             color: white;
-            margin-bottom: 16px;
+            margin-bottom: 26px;
 }
 .sec2{
         font-family: var(--fonte-extra);
@@ -269,28 +320,80 @@ input[type="reset"]:hover{
         font-size: 18px;
         color: white;
     }
-footer{
-        padding: 32px;
-        border-top: 0.4px solid white;
+    div.contato{
+        margin: 5px;
+        padding-left: 5px;
+        padding-right: 45px;
+        border-right:1px solid rgba(255, 255, 255, 0.196);
+        font-size: 15px;
+        text-align: center;
+        line-height: 3em;
+        color: white;
+        font-weight: lighter;
+       
+    }
+    .menu{
+        display: flex;
+        font-size: 15px;
+        text-align: center;
+        list-style-type: none;
+        line-height: 2em;
+        font-weight: lighter;
+        gap: 10px;
+        flex-grow: row;
+
+    }
+    .ImgSociais{
+        width: 20px;
+        margin: 10px;
+    }
+    .ImgSociais:hover{
+        padding: 1px;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+   
+    .menuSocial{
+        align-items: center;
+        line-height: 2em;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+       
+    }
+aside{
+     
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: center;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: left;
         justify-content: space-around;
-        font-family: var(--fonte-extra);
-        font-weight: 400;
-        font-size: 20px;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.114));
+        background-color: rgba(0, 0, 0, 0.332);
+        font-weight: 100;
         color: white;
+        border-top: .5px solid white;
+        
 }
-#titulo{
-        margin-top: 48px;
-        border-top: 0.4px solid white ;
-        padding-top: 48px;
-        font-weight: 400;
-        font-size: 24px;
+div>p#logo{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.652);
+    padding: 5px;
 }
-
-
-img#gif{
-    width: 800px;
-    height: 50px;
+aside h2{
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+}
+footer{
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.862);
+    color: white;
+    text-align: center;
 }
