@@ -85,8 +85,6 @@
         gap: 32px;
         color: white;
     }
-    
-
     .secundário{
         display: flex; 
         flex-direction: column;
@@ -98,7 +96,6 @@
         color: white;
         margin-bottom: 10px;
 }
-
 .sec2{
     font-family: var(--fonte-extra);
     font-weight: 400;
@@ -127,7 +124,6 @@ input[type="submit"]{
     color: white; 
     font-weight: bold;
     margin-left: 35px;
- 
 }
 input[type="reset"]{
     width: 120PX;
@@ -140,39 +136,42 @@ input[type="reset"]{
     font-weight: bold;
 }
 .menu{
-    display: block;
+    display: flex;
+    flex-direction: row;
     padding-top: 5px;
-   
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     list-style-type: none;
-    line-height: 2em;
     font-weight: lighter;
     flex-grow: row;
     border-right: none;
 }
-
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: none;
+}
 aside h2{
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .menuSocial{
     margin-right: 5pt;
     padding: 0px;
     padding-top: 27px;
-    font-size: 0px;
     display: block;
     border: none;
     gap: 0px;
+    border-right: none;
 }
 .ImgSociais{
-    width: 15px;
+    width: 20px;
     margin: 10px;
 }
-.contato{
-    border: none;
+div.contato{
+    border-right: none;
     display: block;
-   
-    
 }
 
 div>p#logo{

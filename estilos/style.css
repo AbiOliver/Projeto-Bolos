@@ -150,14 +150,15 @@ form{
     border: 1px solid black;
     padding: 10px;
     border: 1px solid white;
-    background-color: #e2156b;
+    background-color: #E1CBB7;
     border-radius: 10px;
     margin-bottom: 30px;
 }
 
 .campo1{
-    background-color: #ed1bdfa6;
-    padding: 50px;
+    background-color: #f8e9db;
+    border: 1px solid whitesmoke;
+    padding: 40px;
     border-radius: 10px;
 }
 .fieldset legend{
@@ -165,7 +166,7 @@ form{
     border-radius: 5px;
     padding: 3px;
     font-size: 1.7em;
-    color: #F235B0;
+    color:#F235B0 ;
 }
 div.display{
 display: flex;
@@ -180,7 +181,7 @@ div.display2{
 }
 .fieldset input{
     width: 350px;
-    background-color: #fc77e8;
+    background-color: #E981B8;
     border: 1px solid white;
     padding: 10px;
     margin-right: 5px;
@@ -195,7 +196,7 @@ div.display2{
 .fieldset select{
     width: 350px;
     margin-right: 5px;
-    background-color: #fc77e8;
+    background-color: #E981B8;
     color: white;
     border: 1px solid white;
     border-radius: 5px;
@@ -210,10 +211,10 @@ input[type="checkbox"]{
     margin-top: 30px;  
 }
 .fieldset input:hover{
-    background-color: #e2156b;
+    background-color: #e2156a51;
 }
 .fieldset select:hover{
-    background-color: #e2156b;
+    background-color: #e2156a51;
 }
 div.display label{
     color: white;
@@ -234,14 +235,14 @@ textarea{
     width: 750px;
     height: 200px;
     resize: none;
-    background-color: #fc77e8;
+    background-color: #E981B8;
     color: white;
     font-weight: bold;
     border: 2px solid white;
     border-radius: 5px;
 }
 textarea:hover{
-    background-color: #e2156b;
+    background-color:#e2156a51 ;
 }
 input[type="submit"]{
      width: 320PX;
@@ -251,7 +252,7 @@ input[type="submit"]{
   
 }
 input[type="submit"]:hover{
-   background-color: #e2156b;
+   background-color: #e2156a51;
 }
 input[type="reset"]{
     width: 320PX;
@@ -259,7 +260,7 @@ input[type="reset"]{
     font-weight: bold;
 }
 input[type="reset"]:hover{
-    background-color: #e2156b;
+    background-color: #e2156a51;
  }
 
 #feedback:focus #feed{
@@ -341,7 +342,7 @@ input[type="reset"]:hover{
         font-weight: lighter;
         gap: 10px;
         flex-grow: row;
-
+        
     }
     .ImgSociais{
         width: 20px;
@@ -362,7 +363,6 @@ input[type="reset"]:hover{
        
     }
 aside{
-     
         padding-right: 10px;
         padding-left: 10px;
         text-align: left;
