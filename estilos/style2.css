@@ -141,7 +141,9 @@ input[type="reset"]{
 }
 .menu{
     display: block;
-    font-size: 13px;
+    padding-top: 5px;
+   
+    font-size: 10px;
     text-align: center;
     list-style-type: none;
     line-height: 2em;
@@ -149,19 +151,28 @@ input[type="reset"]{
     flex-grow: row;
     border-right: none;
 }
+
 aside h2{
     font-size: 10px;
 }
 .menuSocial{
+    margin-right: 5pt;
     padding: 0px;
-    padding-top: 15px;
-    font-size: 10px;
+    padding-top: 27px;
+    font-size: 0px;
     display: block;
     border: none;
+    gap: 0px;
+}
+.ImgSociais{
+    width: 15px;
+    margin: 10px;
 }
 .contato{
     border: none;
     display: block;
+   
+    
 }
 
 div>p#logo{

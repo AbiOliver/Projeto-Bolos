@@ -323,7 +323,7 @@ input[type="reset"]:hover{
     div.contato{
         margin: 5px;
         padding-left: 5px;
-        padding-right: 45px;
+        padding-right: 5px;
         border-right:1px solid rgba(255, 255, 255, 0.196);
         font-size: 15px;
         text-align: center;
@@ -335,7 +335,7 @@ input[type="reset"]:hover{
     .menu{
         display: flex;
         font-size: 15px;
-        text-align: center;
+        text-align: left;
         list-style-type: none;
         line-height: 2em;
         font-weight: lighter;
@@ -365,7 +365,7 @@ aside{
      
         padding-right: 10px;
         padding-left: 10px;
-        text-align: center;
+        text-align: left;
         display: flex;
         flex-direction: row;
         align-items: left;
@@ -379,7 +379,7 @@ aside{
 }
 div>p#logo{
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     color: rgba(255, 255, 255, 0.652);
     padding: 5px;
