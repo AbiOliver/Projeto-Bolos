@@ -8,7 +8,7 @@
    
     <link rel="shortcut icon" href="imagens/Bolos Da Ju.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="estilos/style.css" >
     <link rel="stylesheet" href="estilos/style2.css" >
    
@@ -57,13 +57,17 @@
                     <a href="#contato">Contato</a>
 
                     <a href="#" onclick="clickSobre()">Sobre</a>
-                    <iframe src="Sobre.html" frameborder="0" id="itens4">
-                        <span class="material-symbols-outlined" >
-                            close
-                            </span>
-                    </iframe>
-                   
 
+                    
+                           
+                    
+                        
+                            <iframe src="Sobre.html" frameborder="0" id="itens4">
+                            </iframe>
+                        
+                    
+                  
+                    
                     <a href="#" onclick="clickFeed()" id="feed">Feedback</a>
                     <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" id="feedback">
                         <input type="text" name="mensagem" id="imensagem" placeholder="Deixe seu feedback..." required>
@@ -243,17 +247,17 @@
             }else{
                 itens4.style.display = 'block'
             }
+        }  
+
+        
+        function clickFechar(){    
+        if(fechar.style.display == 'block'){
+           fechar.style.display = 'none'
+        }else{
+            fechar.style.display = 'none'
         }
-        function clickChess(){
-            if(itens4.style.display=='none'){
-                
-                    itens4.style.display ='block'
-                }else{
-                    itens4.style.display='none'
-                }
-            
-        }
-       
+    }    
     </script>
+     
 </body>
 </html>

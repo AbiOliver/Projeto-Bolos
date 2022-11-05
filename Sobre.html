@@ -59,21 +59,63 @@ div#imagem img{
 .material-symbols-outlined{
     font-size: 50px;
     color: white;
+    font-weight: bold;
     display: block;
     position: fixed;
     left: 90%;
     top: 5%;
 }
+.material-symbols-outlined a{
+    color: white;
+    text-decoration: none;
+}
+.material-symbols-outlined a:hover{
+    color: rgba(255, 255, 255, 0.511);
+}
+/* págine sobre */
+@media(max-width: 800px) {
+    main.sobre{
+    width: 80%;
+    padding: 20px;
+    }
+    main h1{
+    padding-left: 5px;
+    border-left: 5px solid;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.775);
+    font-weight: 100;
+    font-size: 30px;
+}
+main p{
+    color: rgba(0, 0, 0, 0.945);
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: justify;
+    display: flex;
+    font-size: 16px;
+}
+div#imagem img{
+    display: none;
+}
+.material-symbols-outlined{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    display: block;
+    position: fixed;
+    left: 85%;
+    top: 5%;
 
+}
+}
     </style>
 </head>
-<body onclick=" clickChess()" >
-    <span class="material-symbols-outlined" >
-        close
-        </span>
+<body >
+    <span class="material-symbols-outlined" > <a href="index.html" target="_parent">close</a>
+    </span>
     <main class="sobre" >
-        
-        <div>
+        <div> 
             <h1>
                 Confeiteira Ju 
             </h1>
@@ -88,17 +130,5 @@ div#imagem img{
         </div>
       
     </main>
-
-    <script>
-        function clickChess(){
-            if(chess.style.display=='block'){
-                
-                    chess.style.display ='none'
-                }else{
-                    chess.style.display='block'
-                }
-            
-        }
-    </script>
 </body>
 </html>
