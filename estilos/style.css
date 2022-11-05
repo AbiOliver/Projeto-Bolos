@@ -39,6 +39,27 @@ body{
     background-size: cover;   
     background-repeat: no-repeat;
 }
+iframe{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    border-radius:10px ;
+ 
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%, -100%);
+    background-color: rgba(255, 255, 255, 0.442);  
+    z-index: 2;
+}
+.material-symbols-outlined{
+    font-size: 50px;
+    color: white;
+    display: block;
+    position: fixed;
+    left: 90%;
+    top: 5%;
+}
 header img{       
             height: 72px;
             border: 2px solid rgba(0, 0, 0, 0.041);
@@ -76,8 +97,8 @@ nav a:hover{
 }
 
 ul.redes{
-    background-color: #e2156b;
-    display:block;
+    background-color: #e981b8;
+    display: none;
     list-style-type: none;
     border: 1px solid white;
    
@@ -85,6 +106,7 @@ ul.redes{
     padding: 2px  15px 2px 15px;
     position: absolute;
     z-index: 2;
+    line-height: 1.5;
 }
 #itens{
     display: none;
@@ -114,7 +136,9 @@ main{
 main img{
     max-height: 330px;
     max-width: 330px;
+  
 }
+ 
 .principal{
             display: flex; 
             flex-direction: row;
