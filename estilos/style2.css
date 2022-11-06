@@ -123,10 +123,12 @@
 }
 .fieldset select{
     width: 150px;
+    font-size: 10px;
 }
 textarea{
     width: 300px;
     height: 100px;
+    font-size: 10px;
 }
 input[type="submit"]{
     width: 120PX;
@@ -186,6 +188,7 @@ div.contato{
     display: block;
     line-height: 1.8;
     padding: 5px;
+    font-size: lighter;
 }
 
 div>p#logo{

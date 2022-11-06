@@ -159,7 +159,7 @@ form{
 }
 .fieldset{
     width: 800px;
-    height: 650px;
+    height: 600px;
     display: block;
     margin: auto;
     background: url('../imagens/Bolos\ Da\ Ju.png');
@@ -177,6 +177,7 @@ form{
     background-color: #f8e9db;
     border: 1px solid whitesmoke;
     padding: 40px;
+    margin-bottom: 20px;
     border-radius: 10px;
 }
 .fieldset legend{
