@@ -57,7 +57,7 @@
      
     }
     #feedback{
-        display: none;
+        display: flex;
         width: 100%;
         position: relative;
      
@@ -144,9 +144,12 @@ input[type="reset"]{
     font-size: 10px;
     font-weight: bold;
 }
+
 .menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding-top: 5px;
     font-size: 12px;
     text-align: center;
@@ -166,7 +169,7 @@ aside h2{
     font-weight: bold;
 }
 .menuSocial{
-    margin-right: 5pt;
+  
     padding: 0px;
     padding-top: 27px;
     display: block;
@@ -176,12 +179,13 @@ aside h2{
 }
 .ImgSociais{
     width: 20px;
-    margin: 10px;
+
 }
 div.contato{
     border-right: none;
     display: block;
     line-height: 1.8;
+    padding: 5px;
 }
 
 div>p#logo{

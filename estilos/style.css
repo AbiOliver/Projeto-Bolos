@@ -281,13 +281,11 @@ input[type="reset"]:hover{
     background-color: #e2156a51;
  }
 
-#feedback:focus #feed{
-    display: none;
-}
+
 #feedback{  
-    display: none;
-    justify-content: right;
-    
+    display: flex;
+    justify-content: center;
+  
 }
 #feedback input[type="text"]{
     width: 300px;
@@ -297,6 +295,7 @@ input[type="reset"]:hover{
     border: 2px solid white;
     border-right: none;
     padding:5px;
+    
 }
 #feedback input::placeholder{
     font-size: 1.4em;
@@ -319,7 +318,7 @@ input[type="reset"]:hover{
 
 }
 #feedback input:hover{
-    background-color: #F244E7;
+    background-color: #f244e660;
     transition: .4s ease-in-out;
     
 }
@@ -328,8 +327,8 @@ input[type="reset"]:hover{
             flex-direction: column;
             align-items: center;
             gap: 24px;
-            font-weight: 400;
-            font-size: 24px;
+            font-weight: 100;
+            font-size: 20px;
             font-family: var(--fonte-padrao);
             color: white;
             margin-bottom: 26px;
@@ -341,16 +340,13 @@ input[type="reset"]:hover{
         color: white;
     }
     div.contato{
-        margin: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
         border-right:1px solid rgba(255, 255, 255, 0.196);
         font-size: 15px;
         text-align: center;
         line-height: 3em;
         color: white;
         font-weight: lighter;
-       
+        padding: 20px 20px 0px 0px;
     }
     .menu{
         display: flex;
@@ -359,8 +355,8 @@ input[type="reset"]:hover{
         list-style-type: none;
         line-height: 2em;
         font-weight: lighter;
-        gap: 10px;
-        flex-grow: row;
+        gap: 25px;
+       
         
     }
     .ImgSociais{
@@ -375,27 +371,25 @@ input[type="reset"]:hover{
    
     .menuSocial{
         align-items: center;
-        line-height: 2em;
-        padding: 10px;
+        padding: 15px;
         display: flex;
-        gap: 10px;
-       
+        flex-direction: column;
+        gap: 45px;  
     }
+    
 aside{
-        padding-right: 10px;
-        padding-left: 10px;
         text-align: left;
         display: flex;
         flex-direction: row;
-        align-items: left;
+        align-items: left; 
         justify-content: space-around;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.114));
         background-color: rgba(0, 0, 0, 0.332);
         font-weight: 100;
         color: white;
-        border-top: .5px solid white;
-        
+        border-top: .5px solid white;     
 }
+
 div>p#logo{
     display: block;
     text-align: left;

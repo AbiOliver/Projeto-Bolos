@@ -55,11 +55,8 @@
                     <a href="#" onclick="clickSobre()">Sobre</a>
                      <iframe src="Sobre.html" frameborder="0" id="itens4" referrerpolicy="no-referrer-when-downgrade">
                      </iframe>             
-                    <a href="#" onclick="clickFeed()" id="feed">Feedback</a>
-                    <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" id="feedback">
-                        <input type="text" name="mensagem" id="imensagem" placeholder="Deixe seu feedback..." required>
-                        <input type="submit" value="Enviar">
-                   </form>
+                  
+                   
         </nav>
     </header>
 
@@ -177,9 +174,17 @@
                  <p><a href="#" target="_self" rel="unself"  id="sociais">Redes Sociais</a></p>
 
                 </ul>  
+               
+            </div>
+            <div class="contato menuSociais" style="display: flex; align-items: center">
+         
+                <form action="https://formsubmit.co/confeitariaju6@gmail.com" method="post" id="feedback">
+                    <input type="text" name="mensagem" id="imensagem" placeholder="Deixe seu feedback..." required>
+                    <input type="submit" value="Enviar">
+               </form>
             </div>
            <div class="menuSocial ">
-            <h2>SOCIAIS</h2>
+            <h2 class="alturaLinha">SOCIAIS</h2>
             <div class=" menu">
                 <p><a href="https://www.facebook.com/jucilene.silva.925059" target="_blank"><img src=" https://cdn-icons-png.flaticon.com/512/1051/1051258.png"  alt="facebook" class="ImgSociais"> </a></p>
                 <p><a href="https://www.instagram.com/bolosdaju63/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="instagram" class="ImgSociais"></a> </p>
@@ -187,10 +192,10 @@
                 <p><a href="https://wa.me/5511967242413" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="whatsapp" class="ImgSociais" t></a></p>
             </div>
            </div>
-           <div><p id="logo">© Bolos da Ju</p></div>
+          
         </aside>
         <footer>
-            <p>Direitos reservados</p>
+           <p id="logo">© Bolos da Ju</p>
         </footer>
     <script>
         function mudoutamanho(){
@@ -214,13 +219,6 @@
                    else{
                     itens3.style.display = 'none' 
                    }    
-        }
-        function clickFeed(){
-            if(feedback.style.display=='flex'){
-                feedback.style.display = 'none'
-            }else{
-                feedback.style.display = 'flex'
-            }
         }
         function clickSobre(){
             if(itens4.style.display=='block'){
