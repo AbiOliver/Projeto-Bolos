@@ -66,6 +66,9 @@ header img{
     align-items: center;
     justify-content: space-around;
     padding: 9px;
+
+    position: relative;
+   
 }
 #tituloH{
     display: none;
@@ -84,6 +87,7 @@ nav a{
     color: white;
     font-family: var(--fonte-padrao);
     flex-wrap: wrap; 
+ 
 }
 nav a:hover{
     color: rgba(255, 255, 255, 0.59);
